@@ -1,11 +1,12 @@
 import { NavLink } from "react-router-dom";
-import { LayoutDashboard, Package, Tag, Shapes, ShoppingCart } from "lucide-react";
+import { LayoutDashboard, Package, Tag, Shapes, ShoppingCart, Layers } from "lucide-react";
 
 const links = [
     { to: "/", label: "Dashboard", icon: LayoutDashboard, end: true },
     { to: "/products", label: "Products", icon: Package },
     { to: "/categories", label: "Categories", icon: Shapes },
     { to: "/brands", label: "Brands", icon: Tag },
+    { to: "/collections", label: "Collections", icon: Layers },
     { to: "/orders", label: "Orders", icon: ShoppingCart }
 ];
 

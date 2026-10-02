@@ -13,6 +13,9 @@ import EditCategory from "./pages/categories/EditCategory";
 import Brands from "./pages/brands/Brands";
 import AddBrand from "./pages/brands/AddBrand";
 import EditBrand from "./pages/brands/EditBrand";
+import Collections from "./pages/collections/Collections";
+import AddCollection from "./pages/collections/AddCollection";
+import EditCollection from "./pages/collections/EditCollection";
 import Orders from "./pages/orders/Orders";
 import OrderDetailsPage from "./pages/orders/OrderDetails";
 
@@ -29,6 +32,10 @@ export default function App() {
           <Route path="/products/new" element={<AddProduct />} />
           <Route path="/products/:id" element={<ProductDetailsPage />} />
           <Route path="/products/:id/edit" element={<EditProduct />} />
+
+          <Route path="/collections" element={<Collections />} />
+          <Route path="/collections/new" element={<AddCollection />} />
+          <Route path="/collections/:id/edit" element={<EditCollection />} />
 
           <Route path="/categories" element={<Categories />} />
           <Route path="/categories/new" element={<AddCategory />} />
